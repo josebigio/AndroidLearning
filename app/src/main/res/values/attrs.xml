@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="TestView">
+        <attr name="circleColor" format="color" />
+        <attr name="circleLabel" format="string"></attr>
+        <attr name="labelColor" format="color"></attr>
+        <attr name="busName" format="string"></attr>
+        <attr name="busDirection" format="string"></attr>
+    </declare-styleable>
+</resources>

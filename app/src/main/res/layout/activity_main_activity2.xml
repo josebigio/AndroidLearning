@@ -1,0 +1,208 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/generic_bus">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_textView"
+        android:text="There is a Capital Metro\ndeparting for work at 10:35 AM"
+        android:textColor="#fffffaff"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+    <com.mycompany.omgandroid.TestView
+        android:id="@+id/test_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:circleColor="#0066cc"
+        android:layout_below="@+id/info_textView"
+        android:layout_centerHorizontal="true"
+        custom:busDirection="NORTHBOUND"
+        custom:busName="14"
+     >
+    </com.mycompany.omgandroid.TestView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/test_view"
+        android:layout_centerHorizontal="true">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEPARTING IN"
+                android:textColor="#fffffaff"
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 min"
+                android:textColor="#fffffaff"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+
+            />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </View>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map"
+                android:background="@null"
+                android:layout_gravity="center"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textColor="#fffffaff"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+            </View>
+
+         </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL FAIR"
+                android:textColor="#fffffaff"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#fffffaff"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </View>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cta"
+                android:background="@null"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket"
+                android:layout_gravity="center"
+                android:textColor="#fffffaff"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+        </View>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRAVEL TIME"
+                android:textColor="#fffffaff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="est. 20 min"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#fffffaff"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </View>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/schedule"
+                android:background="@null"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule"
+                android:layout_gravity="center"
+                android:textColor="#fffffaff"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+            </View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+        </View>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
