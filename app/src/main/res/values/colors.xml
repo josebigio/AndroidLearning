@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="aqua_green">#41FFB0</color>
+    <color name="aqua_green_transparent">#6641FFB0</color>
+    <color name="dark_green">#284547</color>
+    <color name="dark_green_transparent">#CC284547</color>
+    <color name="dark_green_light_transparent">#BB284547</color>
+    <color name="dark_green_xlight_transparent">#08284547</color>
+    <color name="light_green">#E5FCF3</color>
+    <color name="light_gray">#EEF4F4</color>
+    <color name="medium_gray">#D5E0E4</color>
+    <color name="red">#EA0000</color>
+
+    <color name="walking">#18A9A0</color>
+    <color name="biking">#F3440D</color>
+    <color name="driving">#785992</color>
+    <color name="transit">#34507D</color>
+    <color name="taxi">#FEBC13</color>
+    <color name="parking">#5EC0C7</color>
+    <color name="rideshare">#2973cc</color>
+
+    <color name="walking_polyline">@color/aqua_green</color>
+    <color name="biking_inner_polyline">@color/aqua_green</color>
+    <color name="biking_outer_polyline">@color/dark_green</color>
+    <color name="driving_inner_polyline">@color/black</color>
+    <color name="driving_outer_polyline">@color/aqua_green</color>
+    <color name="transit_inner_polyline">#41FFB0</color>
+    <color name="transit_outer_polyline">#41FFB0</color>
+    <color name="taxi_inner_polyline">@color/black</color>
+    <color name="taxi_outer_polyline">@color/light_green</color>
+
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="white_transparent">#CCFFFFFF</color>
+    <color name="white_light_transparent">#33FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="xlight_green">#FFE4FCF1</color>
+    <color name="drawer_active_background_green">#FFA9FED7</color>
+    <color name="drawer_active_green">#FF3C8969</color>
+
+    <color name="green_button">#ff759da1</color>
+    <color name="twitter_blue">#ff55acee</color>
+    <color name="gplus_red">#ffdd4b39</color>
+
+    <color name="walking_route">#ff18a9a0</color>
+    <color name="driving_route">#ff785992</color>
+    <color name="biking_route">#fff3440d</color>
+    <color name="transit_route">#ff34507d</color>
+    <color name="parking_route">#ff5ec0c7</color>
+    <color name="taxi_route">#fffebc13</color>
+
+    <color name="yellow">#ffeed202</color>
+    <color name="green">#00ff00</color>
+    <color name="dark_green_text">#2a4647</color>
+    <color name="disabled_text">#4f8c8d</color>
+    <color name="light_gray_bg">#d4e0e2</color>
+    <color name="mint_green">#3dcfaa</color>
+    <color name="light_gray_border">#c6c9cc</color>
+
+    <color name="ridescout_green_text">#48d1ac</color>
+
+    <!-- Onboarding colors -->
+    <!-- Partially-transparent white: -->
+    <color name="onboarding_font">#c8ffffff</color>
+    <!-- Semi-transparent white: -->
+    <color name="onboarding_horizontal_rule">#80ffffff</color>
+    <!-- Semi-transparent black: -->
+    <color name="onboarding_cities_background">#64000000</color>
+    <color name="onboarding_providers_background">#dc000000</color>
+    <!-- WARNING: this (currently) also needs to be defined in OnboardingFragmentTwo! WARNING -->
+    <color name="onboarding_providers_row_background">@color/transparent</color>
+    <color name="black_transparent">#d0000010</color>
+    <color name="blue_transparent">#a00000ff</color>
+</resources>
