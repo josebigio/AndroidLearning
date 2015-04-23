@@ -8,52 +8,30 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
+
+import java.util.ArrayList;
 
 
 public class Home extends ActionBarActivity implements View.OnClickListener {
 
     View layoutView;
+    MainAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
         layoutView = (View)findViewById(R.id.main_activity_layout);
+
         setUpViews();
 
-
-
-
-
-
     }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_activity2, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
 
     private void setupActionBar(int res) {
 
@@ -80,10 +58,19 @@ public class Home extends ActionBarActivity implements View.OnClickListener {
     }
 
     public void setUpViews() {
-        setupActionBar(R.layout.action_bar);
 
-        Fragment_Transit transitFragment = new Fragment_Transit();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentFrame, transitFragment).commit();
+        setupActionBar(R.layout.action_bar);
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.main_recycler);
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(llm);
+        mainAdapter = new MainAdapter();
+        recyclerView.setAdapter(mainAdapter);
+
+
+
+//        Fragment_Transit transitFragment = new Fragment_Transit();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentFrame, transitFragment).commit();
 
 
 

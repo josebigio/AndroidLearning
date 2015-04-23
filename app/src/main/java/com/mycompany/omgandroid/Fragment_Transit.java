@@ -19,7 +19,7 @@ public class Fragment_Transit extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         super.onCreateView(inflater,container,savedInstanceState);
-        mainLayout = inflater.inflate(R.layout.transit_fragment,container,false);
+        mainLayout = inflater.inflate(R.layout.transit_fragment_rename,container,false);
         setupViews();
         return mainLayout;
     }
